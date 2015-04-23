@@ -1,7 +1,7 @@
 /* 
  jQuery txtTip plugin
  Author: Hu Yicheng
- usage: $("slector").txtTip({tipTxt:"提示信息",objStyle:{ww:100,hh:100}});
+ usage: $("slector").txtTip({tipTxt:"提示的文字信息",objStyle:{ww:100,hh:100}}); //  ww,hh 是为解决jQuery低版本库不支持获取隐藏元素高度和宽度而定义的宽度和高度
 */
 (function(){
 $.fn.txtTip = function(options){

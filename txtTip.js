@@ -1,7 +1,7 @@
 /* 
  jQuery txtTip plugin
  Author: Hu Yicheng
- usage: $("slector").txtTip({tipTxt:"提示信息",objStyle:{ww:100,hh:100}});
+ usage: $("slector").txtTip({tipTxt:"鎻愮ず淇℃伅",objStyle:{ww:100,hh:100}});
 */
 (function(){
 $.fn.txtTip = function(options){

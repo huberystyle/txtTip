@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>text tip</title>
+<style>
+*{ margin:0; padding:0;}
+.t{ padding-bottom:12px;}
+.st{ padding:6px 0 4px;}
+.c{ margin:0 0 30px 0;}
+pre{ padding:12px 8px; margin-bottom:30px; background-color:#EEECCC;}
+body{ font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+
+#test{ width:150px; height:30px; line-height:30px; border:0;}
+</style>
+<script src="jquery.js"></script>
+<script src="txtTip.js"></script>
+<script>
+$(function(){
+	/*$("#test").txtTip({tipTxt:"Test",objStyle:{defaultColor:"#000",fontSize:"12px"},labelStyle:{focusColorNull:"#CCC",blurColorNull:"#999"},wrapStyle:"float:left;margin-right:9px;text-align:left"});*/
+	
+	$("#test").txtTip({tipTxt:"This is a test",objStyle:{ww:150,hh:30},wrapStyle:"border:1px solid #669966;"});
+});
+</script>
+</head>
+
+<body>
+<h4 class="t">文本框提示插件</h4>
+<p class="st">演示效果：</p>
+<div class="c">
+<!------------------------------->
+<input type="text" id="test">
+<!------------------------------->
+</div>
+<p class="st">使用方法：</p>
+
+<pre>
+<code>$("input选中器").txtTip({</code>
+    <code>tipTxt:"this is a test", // 提示信息</code>	
+    <code>objStyle:{defaultColor:"#000",fontSize:"12px",ww:150,hh:30},// input框字体颜色和大小及文本框长度宽度设置</code>
+    <code>labelStyle:{focusColorNull:"color",blurColorNull:"color"}, // 获得焦点和失去焦点时的文本信息的颜色设置</code>
+    <code>wrapStyle:"float:left;margin-right:9px;text-align:left" // input的样式</code>
+<code>})</code>
+</pre>
+
+<p class="st">代码变更：</p>
+<div class="c">
+<p>增加了设置文本框宽度和高度的入口，解决 jQuery 1.4.2 对隐藏元素高度获取不到的问题。</p>
+<p>objStyle:{defaultColor:"#000",fontSize:"12px",<span style="color:#FF0000;">ww:150,hh:30</span>}</p>
+</div>
+
+</body>
+</html>
